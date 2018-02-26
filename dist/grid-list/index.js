@@ -564,8 +564,9 @@ var mdcGridList = { render: function render() {
       return classes;
     },
     styles: function styles() {
+      var defaultWidth = 200;
       return {
-        '--mdc-grid-list-tile-width': this.width + 'px'
+        '--mdc-grid-list-tile-width': (this.width || defaultWidth) + 'px'
       };
     }
   },
